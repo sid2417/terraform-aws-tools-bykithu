@@ -21,13 +21,17 @@ data "aws_ami" "nexus_ami_info" {
 
     filter {
         name   = "name"
-        values = ["RHEL-9.4-RHCOS-4.18_HVM_GA-20250122-*"]
+        values = ["SolveDevOps-Nexus-Server-Ubuntu24.04-20250529-*"]
     }
 
     filter {
         name   = "virtualization-type"
         values = ["hvm"]
     }
+    filter {
+    name   = "architecture"
+    values = ["x86_64"]
+  }
 }
 
 # data "aws_security_group" "sg_id" {
