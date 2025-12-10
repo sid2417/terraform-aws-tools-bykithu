@@ -21,7 +21,7 @@ data "aws_ami" "nexus_ami_info" {
 
     filter {
         name   = "name"
-        values = ["SolveDevOps-Nexus-Server-Ubuntu20.04-20240511-*"]
+        values = ["RHEL-9.4-RHCOS-4.18_HVM_GA-20250122-*"]
     }
 
     filter {
